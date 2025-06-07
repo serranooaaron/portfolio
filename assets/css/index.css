@@ -1,0 +1,122 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: #f6f4f3;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.home-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Alinea los elementos hijos verticalmente al centro */
+  flex-wrap: wrap; /* Permite que los elementos se ajusten a múltiples líneas si es necesario */
+  justify-content: space-around; /* Distribuye los elementos a lo largo del eje principal */
+  padding: 12px;
+  height: 10vh; /* Ocupa toda la altura de la ventana */
+  box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.1);
+  background-color: #183059; /* Color de fondo para el encabezado */
+}
+.home-header h1 {
+  font-size: 2rem; /* Tamaño de fuente grande */
+  color: white; /* Color del texto */
+  text-align: center; /* Centra el texto horizontalmente */
+}
+.home-header .title2 {
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+  color: #f6f4f3;
+  padding: 8px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.home-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+.home-section a {
+  text-decoration: none;
+  color: inherit;
+}
+.home-section .title {
+  font-size: 3rem;
+  text-align: center;
+  color: #183059;
+  padding: 1rem;
+  font-family: Poppins, sans-serif;
+  cursor: pointer;
+  border-radius: 10px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  background-color: rgba(168, 168, 168, 0.3);
+  box-shadow: 2px 8px 8px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+}
+.home-section .title2 {
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+  color: #f6f4f3;
+  padding: 8px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.home-section .epigrafe {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  font-size: 1rem;
+  text-align: center;
+  color: #555;
+  padding: 0.5rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  background-color: #183059; /* Color de fondo para el pie de página */
+  color: white; /* Color del texto */
+  font-size: 1.2rem; /* Tamaño de fuente del pie de página */
+  padding: 12px;
+}
+
+@media (min-width: 768px) {
+  body {
+    width: 100%;
+    height: 100%;
+    background-color: #f6f4f3;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  .home-header {
+    display: flex;
+    flex-direction: row;
+    height: 15vh;
+    padding: 12px;
+    justify-content: space-between; /* Organiza los elementos en una fila */
+    align-items: center; /* Alinea los elementos hijos verticalmente al centro */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten a múltiples líneas si es necesario */
+  }
+  .home-header h1 {
+    padding: 1rem;
+    font-size: 2rem; /* Tamaño de fuente grande */
+    color: white; /* Color del texto */
+    text-align: center; /* Centra el texto horizontalmente */
+  }
+  .home-header .dropdown-content {
+    position: absolute;
+    right: 0;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

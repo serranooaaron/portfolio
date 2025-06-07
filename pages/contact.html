@@ -3,10 +3,72 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio - Contact</title>
+    <title>Portfolio - Home</title>
     <link rel="stylesheet" href="../assets/css/style.css" />
   </head>
   <body>
-    <h1>Contact</h1>
+    <!-- Header Section -->
+    <header class="home-header">
+      <div class="logo">
+        <a href="./index.html"
+          ><img
+            src="../assets/img/logo.png"
+            width="75"
+            height="75"
+            alt="Logo"
+          />
+        </a>
+      </div>
+      <h1>Serrano Portfolio</h1>
+      <nav class="dropdown-nav" tabindex="0">
+        <button>Menu</button>
+        <div class="dropdown-content">
+          <a href="../index.html">Home</a>
+          <a href="./about-me.html">About Me</a>
+          <a href="./contact.html">Contact</a>
+          <a href="./skills.html">Skills</a>
+          <a href="./experience.html">Experience</a>
+        </div>
+      </nav>
+    </header>
+    <!-- Main Content Section -->
+    <main class="home-main">
+      <section class="container">
+        <section class="contact-section">
+          <h2>¡Hablemos!</h2>
+          <p>
+            ¿Tenés una propuesta, una consulta o simplemente querés saludar?
+            Completá el formulario y me pondré en contacto a la brevedad.
+          </p>
+
+          <form class="contact-form" action="#" method="post">
+            <div class="form-group">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Correo electrónico</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="mensaje">Mensaje</label>
+              <textarea
+                id="mensaje"
+                name="mensaje"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">Enviar mensaje</button>
+          </form>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+    </footer>
   </body>
 </html>

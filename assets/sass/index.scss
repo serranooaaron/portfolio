@@ -1,0 +1,134 @@
+$head-color: #276fbf;
+$primary-color: #f6f4f3;
+$secondary-color: #183059;
+$terciary-color: #f03a47;
+$color-2: #af5b5b;
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  @include flex-column;
+  width: 100%;
+  height: 100%;
+  background-color: $primary-color;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.home-header {
+  @include flex-row;
+  align-items: center; /* Alinea los elementos hijos verticalmente al centro */
+  flex-wrap: wrap; /* Permite que los elementos se ajusten a múltiples líneas si es necesario */
+  justify-content: space-around; /* Distribuye los elementos a lo largo del eje principal */
+  padding: 12px;
+  height: 10vh; /* Ocupa toda la altura de la ventana */
+  box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.1);
+  background-color: $secondary-color; /* Color de fondo para el encabezado */
+  h1 {
+    font-size: 2rem; /* Tamaño de fuente grande */
+    color: white; /* Color del texto */
+    text-align: center; /* Centra el texto horizontalmente */
+  }
+  .title2 {
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    color: $primary-color;
+    padding: 8px;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+
+.home-section {
+  @include flex-column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  a {
+    text-decoration: none;
+    color: inherit; // Hereda el color del elemento padre
+  }
+  .title {
+    font-size: 3rem;
+    text-align: center;
+    color: $secondary-color;
+    padding: 1rem;
+    font-family: Poppins, sans-serif;
+    cursor: pointer;
+    border-radius: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    background-color: rgba(168, 168, 168, 0.3);
+    box-shadow: 2px 8px 8px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+  }
+  .title2 {
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    color: $primary-color;
+    padding: 8px;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .epigrafe {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    font-size: 1rem;
+    text-align: center;
+    color: #555;
+    padding: 0.5rem;
+  }
+}
+
+footer {
+  @include flex-row;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  background-color: $secondary-color; /* Color de fondo para el pie de página */
+  color: white; /* Color del texto */
+  font-size: 1.2rem; /* Tamaño de fuente del pie de página */
+  padding: 12px;
+}
+
+@media (min-width: 768px) {
+  body {
+    width: 100%;
+    height: 100%;
+    background-color: $primary-color;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  .home-header {
+    display: flex;
+    flex-direction: row;
+    height: 15vh;
+    padding: 12px;
+    justify-content: space-between; /* Organiza los elementos en una fila */
+    align-items: center; /* Alinea los elementos hijos verticalmente al centro */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten a múltiples líneas si es necesario */
+    h1 {
+      padding: 1rem;
+      font-size: 2rem; /* Tamaño de fuente grande */
+      color: white; /* Color del texto */
+      text-align: center; /* Centra el texto horizontalmente */
+    }
+    .dropdown-content {
+      position: absolute;
+      right: 0;
+    }
+  }
+}
