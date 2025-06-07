@@ -43,7 +43,7 @@ body {
   margin-left: 20px;
 }
 .home-header .dropdown-nav button {
-  background-color: rgba(200, 30, 30, 0.8);
+  background-color: rgba(240, 58, 71, 0.8);
   box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.4);
   color: white;
   padding: 10px 20px;
@@ -52,7 +52,7 @@ body {
   border-radius: 5px;
 }
 .home-header .dropdown-nav button:hover {
-  background-color: rgba(155.652173913, 23.347826087, 23.347826087, 0.8);
+  background-color: rgb(229.5235849057, 17.4764150943, 32.6226415094);
 }
 .home-header .dropdown-nav buttonfocus {
   outline: none;
@@ -96,6 +96,61 @@ body {
   flex-direction: row;
   justify-content: center;
   padding: 3rem 1rem;
+}
+.home-main .container .experience-section {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  padding: 1rem;
+  text-align: center;
+}
+.home-main .container .experience-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #183059;
+}
+.home-main .container .experience-section .timeline {
+  position: relative;
+  margin-left: 20px;
+  border-left: 2px solid #183059;
+  padding-left: 1.5rem;
+}
+.home-main .container .experience-section .timeline-item {
+  position: relative;
+  margin-bottom: 2.5rem;
+  padding-left: 1.5rem;
+  text-align: left;
+}
+.home-main .container .experience-section .timeline-item .timeline-dot {
+  position: absolute;
+  left: -11px;
+  top: 5px;
+  width: 15px;
+  height: 15px;
+  background-color: #183059;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.home-main .container .experience-section .timeline-item .timeline-content {
+  background-color: rgba(240, 58, 71, 0.3);
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+}
+.home-main .container .experience-section .timeline-item .timeline-content h3 {
+  margin: 0;
+  color: #183059;
+  font-size: 1.2rem;
+}
+.home-main .container .experience-section .timeline-item .timeline-content .timeline-date {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+.home-main .container .experience-section .timeline-item .timeline-content p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #183059;
 }
 .home-main .container .contact-section {
   display: flex;
